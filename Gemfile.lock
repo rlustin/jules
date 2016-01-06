@@ -1,0 +1,19 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bower-rails (0.10.0)
+    mustache (1.0.2)
+    rmagick (2.15.4)
+    rubyzip (1.1.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bower-rails
+  mustache
+  rmagick
+  rubyzip
+
+BUNDLED WITH
+   1.10.6

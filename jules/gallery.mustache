@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="../assets/vendor/photoswipe/photoswipe.css">
+  <link rel="stylesheet" href="../assets/vendor/photoswipe/default-skin/default-skin.css">
+  <link rel="stylesheet" href="../assets/app/style.css">
+</head>
+<body>
+  <h1>
+    {{title}}
+    <a class="jules__zip" href="{{zip}}">zip</a>
+  </h1>
+
+  <div class="jules__photos">
+    {{#photos}}
+      <figure>
+        <a href="{{paths.original}}" data-size="{{width}}x{{height}}"
+           data-original="{{paths.original}}" data-medium="{{paths.medium}}">
+          <img src="{{paths.thumbnail}}" alt="{{title}}"
+               {{#portrait}}class="jules__photo__portrait" {{/portrait}}/>
+        </a>
+      </figure>
+    {{/photos}}
+  </div>
+
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <div class="pswp__counter"></div>
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+        <button class="pswp__button pswp__button--arrow--left" title="Previous">
+        </button>
+        <button class="pswp__button pswp__button--arrow--right" title="Next">
+        </button>
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/vendor/photoswipe/photoswipe.min.js"></script>
+  <script src="../assets/vendor/photoswipe/photoswipe-ui-default.min.js"></script>
+  <script src="../assets/app/script.js"></script>
+</body>
+</html>

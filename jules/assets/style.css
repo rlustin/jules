@@ -1,0 +1,60 @@
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0.67em 0 1em 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.jules__zip {
+  font-size: 70%;
+  color: #777;
+}
+
+.jules__photos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.jules__photos figure {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin: 3px;
+  flex-grow: 1;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.jules__photos figure:hover {
+  filter: blur(5px);
+  transition: 0.1s ease-out;
+}
+
+.jules__photos figure img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.jules__photos figure img.jules__photo__portrait {
+  width: 100%;
+  height: auto;
+}
