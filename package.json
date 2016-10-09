@@ -1,0 +1,23 @@
+{
+  "name": "jules",
+  "version": "1.0.0",
+  "description": "Simple gallery generator",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.7.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rlustin/jules.git"
+  },
+  "author": "Raphaël Lustin <raphael@lustin.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rlustin/jules/issues"
+  },
+  "homepage": "https://github.com/rlustin/jules#readme"
+}

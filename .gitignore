@@ -1,3 +1,5 @@
 bower_components
 build
 photos
+node_modules
+.*.swp

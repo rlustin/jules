@@ -8,7 +8,7 @@ task default: %w(install build)
 
 desc 'Install assets'
 task :install do
-  sh 'bower install --allow-root'
+  sh 'node_modules/bower/bin/bower install --allow-root'
 
   current_dir = File.dirname(__FILE__)
   assets_dir = "#{current_dir}/build/assets"
