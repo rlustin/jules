@@ -3,7 +3,7 @@ GEM
   specs:
     mustache (1.0.2)
     rmagick (2.15.4)
-    rubyzip (1.1.7)
+    rubyzip (1.3.0)
 
 PLATFORMS
   ruby
